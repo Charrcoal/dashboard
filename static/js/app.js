@@ -1,7 +1,8 @@
 // use D3 fetch to read the JSON file - samples.json
 // the data from the JSON file is named importedData
-d3.json("/data/samples.json").then((importedData) => {
+d3.json("data/samples.json").then((importedData) => {
     var data = importedData;
+    console.log(data);
 
 // set up the initial page with the first subject ID
     var metadataKey = [];
